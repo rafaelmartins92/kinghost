@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "styles.scss",
+        "partials/_reset.scss",
+        "partials/_variables.scss",
+        "partials/_mixins.scss",
+        "partials/_grid.scss",
+        "partials/_home.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
