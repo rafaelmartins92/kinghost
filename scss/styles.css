@@ -34,6 +34,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
   width: 100%;
   height: 11.9rem;
   background-color: #5f3ca1;
@@ -109,7 +110,7 @@ header nav ul li a span {
 
 .s-hero {
   margin-top: 11.9rem;
-  background-color: #5f3ca1;
+  background: #5f3ca1;
   padding-top: 3.9rem;
 }
 
@@ -183,7 +184,7 @@ header nav ul li a span {
 .s-hero .text .conheca .icon {
   width: 4.2rem;
   height: 4.2rem;
-  background-color: rgba(123, 90, 186, 0.4);
+  background: rgba(123, 90, 186, 0.4);
   border-radius: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,6 +253,230 @@ header nav ul li a span {
   }
   .s-hero .image {
     left: -0.9rem;
+  }
+}
+
+.s-resources {
+  padding: 14.9rem 0 9.9rem;
+}
+
+.s-resources .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5.3rem;
+}
+
+.s-resources .top h2 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 130%;
+  color: #453f51;
+  max-width: 50.2rem;
+}
+
+.s-resources .top p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #5e5570;
+}
+
+.s-resources .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.s-resources .content .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 6.4rem;
+  height: 6.4rem;
+  background: rgba(197, 190, 220, 0.1);
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.s-resources .content .info {
+  max-width: 23.9rem;
+}
+
+.s-resources .content .info h4 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #5f3ca1;
+  margin-bottom: 2rem;
+}
+
+.s-resources .content .info p {
+  font-size: 1.6rem;
+  line-height: 165%;
+  color: #5e5570;
+}
+
+.s-resources .content .card-featured {
+  width: 100%;
+  max-width: 28rem;
+  height: 32.3rem;
+  background: rgba(197, 190, 220, 0.1);
+  border-radius: 12px;
+  padding-top: 4.2rem;
+  padding-left: 4.2rem;
+}
+
+.s-resources .content .card-featured .icon {
+  background: #ffffff;
+}
+
+.s-resources .content .card-featured .info {
+  max-width: 20.4rem;
+}
+
+.s-resources .content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 90.4rem;
+  margin-top: 4.2rem;
+  padding-bottom: 6.5rem;
+  padding-left: 2rem;
+  border-bottom: 3px solid rgba(95, 60, 161, 0.1);
+}
+
+@media (max-width: 991px) {
+  .s-resources .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .s-resources .content .card-featured {
+    max-width: 100%;
+    height: auto;
+    padding: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .s-resources .content .card-featured .info {
+    max-width: 100%;
+  }
+  .s-resources .content .card-featured .info h4,
+  .s-resources .content .card-featured .info p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-resources {
+    padding: 10rem 0 5rem;
+  }
+  .s-resources .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .s-resources .top h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .s-resources .content ul {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .s-resources {
+    padding-top: 6rem;
+  }
+  .s-resources .content ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+  .s-resources .content ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .s-resources .content ul li h4,
+  .s-resources .content ul li p {
+    text-align: center;
+  }
+  .s-resources .content .info {
+    max-width: 95%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
