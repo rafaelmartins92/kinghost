@@ -33,7 +33,7 @@
 </p>
 
 <p align="center">
-  <img alt="Scene" src="img/portfolio-scene---kinghost@2x.png">
+  <img alt="Scene" src="img/portfolio-scene-kinghost@2x.png">
 </p>
 
 ## :rocket: Technologies
